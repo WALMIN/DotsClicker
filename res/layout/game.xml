@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#d4d4d4" >
+
+    <TextView
+        android:id="@+id/dotsView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="0 Dots"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+    
+    <TextView
+        android:id="@+id/dpsAndDpcView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dotsView"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="0 Dps | 1 Dpc"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    
+    <Button
+        android:id="@+id/dotBtn"
+        android:layout_width="150dp"
+        android:minWidth="150dp"
+        android:maxWidth="150dp"
+        android:layout_height="150dp"
+        android:minHeight="150dp"
+        android:maxHeight="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/dot"
+        android:onClick="dotBtn" />
+    
+    <Button
+        android:id="@+id/shopDpc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/shopDps"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Dpc: x2 | Price: 1000"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:onClick="shopDpc" />
+    
+    <Button
+        android:id="@+id/shopDps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Dps: +1 | Price: 10"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:onClick="shopDps" />
+    
+</RelativeLayout>
